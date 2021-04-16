@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroCachorro">
+
+    <LinearLayout
+        android:id="@+id/ll_cadastro_cachorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_raca"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:hint="Raça"
+            />
+
+        <EditText
+            android:id="@+id/et_preco_medio"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:hint="Preço médio"
+            android:inputType="numberDecimal"
+            />
+
+        <Switch
+            android:id="@+id/sw_indicado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar cachorro"
+            android:layout_marginTop="20dp"
+            android:onClick="cadastrarCachorro"
+            />
+
+        <TextView
+            android:id="@+id/tv_mensagem_sucesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-------------------"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/iv_imagem_cachorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/img_cachorro_feliz"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
